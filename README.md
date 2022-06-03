@@ -20,7 +20,7 @@ The following **stretch** features are implemented:
 * [x] Improved the user interface by experimenting with styling and coloring.
 * [x] Apply rounded corners for the poster or background images using [Glide transformations](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library#transformations)
 * [x] Apply the popular [View Binding annotation library](http://guides.codepath.org/android/Reducing-View-Boilerplate-with-ViewBinding) to reduce boilerplate code.
-* [ ] Allow video trailers to be played in full-screen using the YouTubePlayerView from the details screen.
+* [x] Allow video trailers to be played in full-screen using the YouTubePlayerView from the details screen.
 
 The following **additional** features are implemented:
 
@@ -43,6 +43,7 @@ Describe any challenges encountered while building the app.
 - MainActivity routed to OnFailure --> Solved it by creating a new emulator device
 - Glide Placeholder Not Shown --> Deleted device cache and restarted app
 - Youtube Player Initializing error --> Updated mainfest to account for updated API
+- Youtube Playback Kept Reloading --> Added Youtube player code block under onSuccess tryblock
 
 ## Open-source libraries used
 
