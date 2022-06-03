@@ -23,6 +23,8 @@ import com.example.flixster.MainActivity;
 import com.example.flixster.MovieDetailsActivity;
 import com.example.flixster.R;
 //import com.example.flixster.modules.GlideApp;
+import com.example.flixster.databinding.ActivityMainBinding;
+import com.example.flixster.databinding.ItemMovieBinding;
 import com.example.flixster.modules.GlideApp;
 import com.example.flixster.modules.Movie;
 
@@ -35,6 +37,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     Context context;
     List<Movie> movies;
     public static String TAG = "MovieAdapter";
+    ItemMovieBinding binding;
+
 
     public MovieAdapter(Context context, List<Movie> movies) {
         this.context = context;
@@ -48,6 +52,12 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         Log.d(TAG,"onCreateViewHolder");
         View movieView = LayoutInflater.from(context).inflate(R.layout.item_movie,parent,false);
+//
+//        binding = ActivityMainBinding.inflate(getLayoutInflater(),context,false);
+//
+//        // layout of activity is stored in a special property called root
+//        View view = binding.getRoot();
+//        setContentView(view);
         return new ViewHolder(movieView);
     }
 
