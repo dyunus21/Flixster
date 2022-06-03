@@ -26,13 +26,14 @@ The following **additional** features are implemented:
 
 * [x] List anything else that you can get done to improve the app functionality!
     * [x] Added Return to Home Button
+    * [x] Added Release Date
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<!-- <img src='https://imgur.com/a/UiUoLO6' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
-![](https://github.com/dyunus21/Flixster/blob/master/FlixsterDemo.mov)
+<img src='[https://imgur.com/a/UiUoLO6](https://submissions.us-east-1.linodeobjects.com/metau_android/8NwAt31z.gif)' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<!-- ![](https://submissions.us-east-1.linodeobjects.com/metau_android/8NwAt31z.gif) -->
 
 GIF created with [Kap](https://getkap.co/).
 
