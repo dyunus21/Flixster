@@ -84,7 +84,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
     }
 
     public void onVideoClick(View view) {
-        String videoId = (String) movie.getVideoId();
+//        String videoId = (String) movie.getVideoId();
         Intent intent = new Intent(this, MovieTrailerActivity.class);
         intent.putExtra("movie", Parcels.wrap(movie));
         startActivity(intent);

@@ -24,7 +24,7 @@ public class Movie {
     String overview;
     Double voteAverage;
     Integer movieId;
-    String videoId;
+//    String videoId;
     String releaseDate;
     public static String TAG = "Movie";
 
@@ -81,7 +81,7 @@ public class Movie {
         return releaseDate;
     }
 
-    public String getVideoId() {
-        return videoId;
-    }
+//    public String getVideoId() {
+//        return videoId;
+//    }
 }
