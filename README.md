@@ -31,7 +31,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/a/UiUoLO6' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<!-- <img src='https://imgur.com/a/UiUoLO6' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
+![](https://github.com/dyunus21/Flixster/blob/master/FlixsterDemo.mov)
 
 GIF created with [Kap](https://getkap.co/).
 
