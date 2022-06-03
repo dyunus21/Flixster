@@ -32,8 +32,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='[https://imgur.com/a/UiUoLO6](https://submissions.us-east-1.linodeobjects.com/metau_android/8NwAt31z.gif)' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<!-- ![](https://submissions.us-east-1.linodeobjects.com/metau_android/8NwAt31z.gif) -->
+<!-- <img src='[https://imgur.com/a/UiUoLO6](https://submissions.us-east-1.linodeobjects.com/metau_android/8NwAt31z.gif)' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
+![](FlixsterDemo.gif)
 
 GIF created with [Kap](https://getkap.co/).
 
