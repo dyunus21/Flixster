@@ -24,7 +24,6 @@ public class Movie {
     String overview;
     Double voteAverage;
     Integer movieId;
-//    String videoURL;
     String videoId;
     public static String TAG = "Movie";
 
@@ -45,35 +44,8 @@ public class Movie {
         movieId = jsonObject.getInt("id");
 
 
-//        videoURL = String.format("https://api.themoviedb.org/3/movie/%d/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed&language=en-US",movieId);
-//        Log.d(TAG,videoURL);
-//        AsyncHttpClient client = new AsyncHttpClient();
-//        client.get(videoURL, new JsonHttpResponseHandler() {
-//            @Override
-//            public void onSuccess(int statusCode, Headers headers, JSON json) {
-//                Log.d(TAG,"onSuccess");
-//                JSONObject jsonObject = json.jsonObject;
-//                try {
-//                    JSONArray results = jsonObject.getJSONArray("results");
-//                    Log.i(TAG,"Results: " + results.toString());
-//                    if(results.length() > 0) {
-//                        videoId = results.getJSONObject(0).getString("key");
-//                        Log.d(TAG,"Key: "+ videoId);
-//                    }
-//                } catch (JSONException e) {
-//                    Log.e(TAG, "Hit JSON exception");
-//                }
-//
-//            }
-//
-//            @Override
-//            public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
-//                Log.d(TAG,"onFailure");
-//            }
-//        });
-
     }
-
+    // Getters
     // Gets list of movies
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException{
         List<Movie> movies = new ArrayList<>();
@@ -82,12 +54,6 @@ public class Movie {
         }
         return movies;
     }
-
-
-    // Gets video
-//    public static Integer getVideo() {
-//
-//    }
 
     public String getBackdropPath() {
         return String.format("https://image.tmdb.org/t/p/w342/%s", backdropPath);
@@ -109,17 +75,8 @@ public class Movie {
         return voteAverage;
     }
 
-//    public String getVideoURL() {
-//        return videoURL;
-//    }
 
     public String getVideoId() {
         return videoId;
     }
-
-//    public JSONArray getGenre() {
-//        return genre;
-//    }
-
-//    public String getLanguage() { return language; }
 }

@@ -29,26 +29,12 @@ import org.w3c.dom.Text;
 public class MovieDetailsActivity extends AppCompatActivity {
 
     Movie movie;
-    TextView tvTitle;
-    TextView tvOverview;
-    RatingBar rbVoteAverage;
-    ImageView ivPoster;
-    ImageView vTrailer;
 
     ActivityMovieDetailsBinding binding;
-//    TextView tvGenre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_movie_details);
-
-//        tvTitle = (TextView) findViewById(R.id.tvTitle);
-//        tvOverview = (TextView) findViewById(R.id.tvOverview);
-//        rbVoteAverage = (RatingBar) findViewById(R.id.rbVoteAverage);
-//        ivPoster = (ImageView) findViewById(R.id.ivPoster);
-//        vTrailer = (ImageView)  findViewById(R.id.vTrailer);
-//        tvGenre = (TextView) findViewById(R.id.tvGenre);
         binding = ActivityMovieDetailsBinding.inflate(getLayoutInflater());
 
         // layout of activity is stored in a special property called root
@@ -59,9 +45,6 @@ public class MovieDetailsActivity extends AppCompatActivity {
         movie = (Movie) Parcels.unwrap(getIntent().getParcelableExtra(Movie.class.getSimpleName()));
         Log.d("MovieDetailsActivity", String.format("Showing details for '%s'", movie.getTitle()));
 
-        // set the parameters
-//        tvTitle.setText(movie.getTitle());
-//        tvOverview.setText(movie.getOverview());
 
         binding.tvTitle.setText(movie.getTitle());
         binding.tvOverview.setText(movie.getOverview());
@@ -87,7 +70,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
                 .transform(new RoundedCorners(10))
                 .into(binding.ivPoster);
 
-        // Trailer setup
+        // Trailer backdrop setup
         GlideApp.with(this)
                 .load(movie.getBackdropPath())
                 .placeholder(R.drawable.flicks_backdrop_placeholder)
@@ -101,10 +84,8 @@ public class MovieDetailsActivity extends AppCompatActivity {
 
     public void onVideoClick(View view) {
         String videoId = (String) movie.getVideoId();
-        //if(videoId.length() > 0) {
-            Intent intent = new Intent(this, MovieTrailerActivity.class);
-            intent.putExtra("movie", Parcels.wrap(movie));
-            startActivity(intent);
-       // }
+        Intent intent = new Intent(this, MovieTrailerActivity.class);
+        intent.putExtra("movie", Parcels.wrap(movie));
+        startActivity(intent);
     }
 }
