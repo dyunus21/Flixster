@@ -25,6 +25,7 @@ public class Movie {
     Double voteAverage;
     Integer movieId;
     String videoId;
+    String releaseDate;
     public static String TAG = "Movie";
 
     // constructors
@@ -42,9 +43,10 @@ public class Movie {
         overview = jsonObject.getString("overview");
         voteAverage = jsonObject.getDouble("vote_average");
         movieId = jsonObject.getInt("id");
-
+        releaseDate = jsonObject.getString("release_date");
 
     }
+
     // Getters
     // Gets list of movies
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException{
@@ -75,6 +77,9 @@ public class Movie {
         return voteAverage;
     }
 
+    public String getReleaseDate() {
+        return releaseDate;
+    }
 
     public String getVideoId() {
         return videoId;

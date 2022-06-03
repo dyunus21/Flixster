@@ -51,6 +51,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
         // vote average is 0..10, convert to 0..5 by dividing by 2
         float voteAverage = movie.getVoteAverage().floatValue();
         binding.rbVoteAverage.setRating(voteAverage / 2.0f);
+        binding.tvDate.setText("Release Date: " + movie.getReleaseDate());
 
         // set poster
         String imageUrl;
